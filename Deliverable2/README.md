@@ -16,4 +16,4 @@
   Random ran = new Random(seed);
   int num = ran.nextInt(bound);
 ```
-> 3. For the unit test, I did know what I should do, But, I don't clear how can I implement in java program.Finally, I choose Junit as my Test tool
+>3. For the unit test, I did know what I should do, But, I don't clear how can I implement in java program.Finally, I choose Junit as my Test tool
