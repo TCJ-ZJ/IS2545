@@ -10,9 +10,9 @@
 
 
 ### ISSUE
-1. I'm not a java programmer before, so, it hard to me to write this java program.
+>1. I'm not a java programmer before, so, it hard to me to write this java program.
 
-2. In requirement, there is a seed for random function, as begin, I even don't know what it mean. After find some source online, I get the result;
+>2. In requirement, there is a seed for random function, as begin, I even don't know what it mean. After find some source online, I get the result;
 ```java
   Random ran = new Random(seed);
   int num = ran.nextInt(bound);
