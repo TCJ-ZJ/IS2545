@@ -6,7 +6,7 @@
 
 >JDK: *JAVA SE 7[1.7.0_79]*
 
->Test Tool: *JUnit 4*
+>Test Tool: *JUnit 4, Mockito*
 
 ### ISSUE
 >1.I'm not a java programmer before, so, it hard to me to write this java program.
