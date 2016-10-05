@@ -6,11 +6,9 @@ public class CitySim9002 {
 
 	public static void main(String[] args) {
 		if(args.length>1||args.length<=0){
-			System.out.println("Please enter one integer argument, seed");
-			System.exit(0);
+			message();
 		}else if(!CheckArgument.isNumber(args[0])){
-			System.out.println("Please enter one integer argument, seed");
-			System.exit(0);
+			message();
 		}
 		System.out.println("Welcome to CitySim!  Your seed is "+args[0]+".");
 		int seed = Integer.parseInt(args[0]);
@@ -23,6 +21,12 @@ public class CitySim9002 {
 			visitors[i].visitorStart();
 			System.out.println("***");
 		}
+	}
+	
+	public static void message(){
+		System.out.println("Please enter one integer argument, seed");
+		System.exit(0);
+		
 	}
 
 }
