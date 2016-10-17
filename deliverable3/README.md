@@ -45,3 +45,68 @@
 >**When** I try to login
 
 >**Then** I should receive an error message with "ERROR: Invalid login credentials."
+
+>**Stor2**
+
+>As a user
+
+>I want to search the items I want to buy
+
+>So that I can get the items list;
+
+>>Scenario1
+
+>**Given** an specific item name that exist in this website
+
+>**When** I try to search
+
+>**Then** Then I should get a list with the certain item;
+
+>>Scenario2 
+
+>**Given** an item name that not exist in this website
+
+>**When** I try to search
+
+>**Then** Then I should receive an error message with "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+
+>>Scenario3   
+
+>**Given** an item name that match multiple items;
+
+>**When** I try to search
+
+>**Then** I should get a list with the all matched items;
+
+>**Story1**
+
+>As a user
+
+>I want to log in
+
+>So that I can access my shopping account
+
+>>Scenario1
+
+>**Given** empty username and password
+
+>**When** I try to login
+
+>**Then** I should receive an error message with "Please enter your username and password."
+
+>>Scenario2 
+
+>**Given** non-empty username and empty password
+
+>**When** I try to login
+
+>**Then** I should receive an error message with "ERROR: The password field is empty."
+
+>>Scenario3   
+
+>**Given** wrong username and wrong password
+
+>**When** I try to login
+
+>**Then** I should receive an error message with "ERROR: Invalid login credentials."
+
