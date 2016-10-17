@@ -15,6 +15,7 @@
 
 ### User Stories
 >**Story1**
+
 >As a user
 
 >I want to log in
@@ -23,20 +24,24 @@
 
 >>Scenario1
 
->Given empty username and password
+>**Given** empty username and password
 
->When I try to login
+>**When** I try to login
 
->Then I should receive an error message with "Please enter your username
+>**Then** I should receive an error message with "Please enter your username and password."
 
->and password."
 >>Scenario2 
-	Given non-empty username and empty password
-	When I try to login
-	Then I should receive an error message with "ERROR: The password field is
-	empty."
->>Scenario3    
-  Given wrong username and wrong password
-	When I try to login
-	Then I should receive an error message with "ERROR: Invalid login
-	credentials."
+
+>**Given** non-empty username and empty password
+
+>**When** I try to login
+
+>**Then** I should receive an error message with "ERROR: The password field is empty."
+
+>>Scenario3   
+
+>**Given** wrong username and wrong password
+
+>**When** I try to login
+
+>**Then** I should receive an error message with "ERROR: Invalid login credentials."
