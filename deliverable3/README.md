@@ -46,7 +46,7 @@
 
 >**Then** I should receive an error message with "ERROR: Invalid login credentials."
 
->**Stor2**
+>**Story2**
 
 >As a user
 
@@ -78,35 +78,35 @@
 
 >**Then** I should get a list with the all matched items;
 
->**Story1**
+>**Story3**
 
 >As a user
 
->I want to log in
+>I want to click the button
 
->So that I can access my shopping account
+>So I can redirect to the certain page I want;
 
 >>Scenario1
 
->**Given** empty username and password
+>**Given** that I'm on the main page
 
->**When** I try to login
+>**When** I click the "checkout" button
 
->**Then** I should receive an error message with "Please enter your username and password."
+>**Then** I should redirect to the checkout page
 
 >>Scenario2 
 
->**Given** non-empty username and empty password
+>**Given** that I'm on the main page
 
->**When** I try to login
+>**When** I click the image button
 
->**Then** I should receive an error message with "ERROR: The password field is empty."
+>**Then** I should redirect to the product page with certain product
 
 >>Scenario3   
 
->**Given** wrong username and wrong password
+>**Given** that I'm on the product info page
 
->**When** I try to login
+>**When** I click "My account" button
 
->**Then** I should receive an error message with "ERROR: Invalid login credentials."
+>**Then** Then I should redirect to the account page
 
