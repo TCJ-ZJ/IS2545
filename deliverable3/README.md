@@ -15,14 +15,21 @@
 
 ### User Stories
 >**Story1**
-  As a user
-	I want to log in
-	So that I can access my shopping account
+>As a user
+
+>I want to log in
+
+>So that I can access my shopping account
+
 >>Scenario1
-  Given empty username and password
-	When I try to login
-	Then I should receive an error message with "Please enter your username
-	and password."
+
+>Given empty username and password
+
+>When I try to login
+
+>Then I should receive an error message with "Please enter your username
+
+>and password."
 >>Scenario2 
 	Given non-empty username and empty password
 	When I try to login
