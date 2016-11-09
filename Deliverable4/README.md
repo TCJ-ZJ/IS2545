@@ -27,6 +27,7 @@ During the test, I choose 15 as argument, and the VisualVM shows that **MainPane
 ###Code I changed
 
 **1.MainPanel.convertToInt(int)
+I think this function is meaningless,add multiple "0" which will not influence the return value.
 ```java
 /*Before*/
 private int convertToInt(int x) {
@@ -42,8 +43,43 @@ private int convertToInt(int x) {
 	int q = Integer.parseInt(n);
 	return q;
 }
-/*after*/
+/*After*/
 private int convertToInt(int x) {
 	return x
 }
+```
+**2.MainPanel.runContinuous()
+In this function, there is a for-loop, which is doing nothing. In loop, it changes the value _r, but after the loop, _r is assigned to original value.
+```java
+/*Before*/
+public void runContinuous() {
+	_running = true;
+	while (_running) {
+	    System.out.println("Running...");
+	    int origR = _r;
+	    try {
+		Thread.sleep(20);
+	    } catch (InterruptedException iex) { }
+	    for (int j=0; j < _maxCount; j++) {
+	    	_r += (j % _size) % _maxCount;
+		_r += _maxCount;
+	    }
+	    _r = origR;
+	    backup();
+	    calculateNextIteration();
+	}
+    }
+
+/*After*/
+public void runContinuous() {
+	_running = true;
+	while (_running) {
+	    System.out.println("Running...");
+	    try {
+		Thread.sleep(20);
+	    } catch (InterruptedException iex) { }
+	    backup();
+	    calculateNextIteration();
+	}
+    }
 ```
