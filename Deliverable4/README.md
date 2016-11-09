@@ -127,6 +127,7 @@ For this part, it return nothing, so,It difficult to use unit test. for this, I 
 And, the results shows no difference.
 
 **3.Cell.toString()**
+</br>
 For this function, it returns the string type of the current state of cell. when initiate a cell with nothing, it should return ".", when initiate a cell with boolean true, it should return "X", when initiate a cell with boolean false, it should return ".".
 The code is in test/Test2.java
 
