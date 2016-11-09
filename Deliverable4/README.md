@@ -123,8 +123,9 @@ The code is in test/Test1.java
 
 **2.MainPanel.runContinuous()**
 </br>
-For this part, it return nothing, so,It difficult to use unit test. for this, I try different size of the world and different initialization, and compare the results between the code I changed and the code I don't changed.
+For this part, it return nothing, so,It difficult to use unit test. for this, I try different initialization, and compare the results between the code I changed and the code I don't changed.
 And, the results shows no difference.
+what I choose for the test is saved in testcase folder.
 
 **3.Cell.toString()**
 </br>
