@@ -13,3 +13,5 @@ During the test, I choose 15 as argument, and the VisualVM shows that **MainPane
 
 ###Profiling(Before)
  ![image](https://github.com/TCJ-ZJ/IS2545/blob/master/Deliverable4/screenShot/profileBefore.jpeg)
+ 
+ we can see that MainPanel.convertToInt(int) function cost most
