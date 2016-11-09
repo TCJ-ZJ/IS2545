@@ -27,6 +27,7 @@ During the test, I choose 15 as argument, and the VisualVM shows that **MainPane
 ###Code I changed
 
 **1.MainPanel.convertToInt(int)**
+</br>
 I think this function is meaningless,add multiple "0" which will not influence the return value.
 ```java
 /*Before*/
@@ -49,6 +50,7 @@ private int convertToInt(int x) {
 }
 ```
 **2.MainPanel.runContinuous()**
+</br>
 In this function, there is a for-loop, which is doing nothing. In loop, it changes the value _r, but after the loop, _r is assigned to original value.
 ```java
 /*Before*/
