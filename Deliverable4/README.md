@@ -118,7 +118,7 @@ public String toString() {
 ###Unit Test
 **1.MainPanel.convertToInt(int)**
 </br>
-For test this function, I create 3 test.each test has different size of the world, then to give the arguments to convertToInt function which should return the integer type of the argument.
+For test this function, I create 3 tests. each test has different size of the world, then to give the argument to convertToInt function which should return the integer type of the argument.
 The code is in test/Test1.java
 
 **2.MainPanel.runContinuous()**
