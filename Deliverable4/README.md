@@ -85,3 +85,32 @@ public void runContinuous() {
 	}
     }
 ```
+**3.Cell.toString()**
+</br>
+In this function, actually, there is also a meaningless for-loop,add multiple times of currentState,but return only the first word of the string
+```java
+/*Before*/
+public String toString() {
+	String toReturn = new String("");
+	String currentState = getText();
+	for (int j = 0; j < _maxSize; j++) {
+	    toReturn += currentState;
+	}
+	if (toReturn.substring(0,1).equals("X")) {
+	    return toReturn.substring(0,1);
+	} else {
+	    return ".";
+	}
+
+    }
+/*After*/
+public String toString() {
+	String toReturn = getText();
+	if (toReturn.substring(0,1).equals("X")) {
+	    return toReturn.substring(0,1);
+	} else {
+	    return ".";
+	}
+
+    }
+```
