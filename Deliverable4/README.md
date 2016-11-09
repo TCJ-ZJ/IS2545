@@ -116,3 +116,14 @@ public String toString() {
 ```
 
 ###Unit Test
+**1.MainPanel.convertToInt(int)**
+</br>
+For test this function, I create 3 test.each test has different size of the world, then to give the arguments to convertToInt function which should return the integer type of the argument.
+The code is in test/Test1.java
+
+**2.MainPanel.runContinuous()**
+</br>
+For this part, it return nothing, so,It difficult to use unit test. for this, I try different size of the world and different initialization, and compare the results between the code I changed and the code I don't changed.
+And, the results shows no difference.
+
+**3.Cell.toString()**
