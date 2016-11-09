@@ -133,3 +133,5 @@ The code is in test/Test2.java
 ###Profile(After)
 
 ![image](https://github.com/TCJ-ZJ/IS2545/blob/master/Deliverable4/screenShot/profileAfter.jpeg)
+
+And the result is same.
