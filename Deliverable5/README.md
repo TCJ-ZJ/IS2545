@@ -24,7 +24,8 @@ We use OWAPS to help us find the vulnerability of the website, and try to attack
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)input some query into search box, and then submit. (for example, I input “Hello”)
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)it will return a result with what query you input
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)it will return a result with what query you input.
+<br>
 ![image](https://github.com/TCJ-ZJ/IS2545/blob/master/Deliverable5/img/1.jpeg)
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)Then, inspect the elements, I find that what I input into the search box, finally add into this span tag.
