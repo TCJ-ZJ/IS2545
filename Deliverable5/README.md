@@ -34,5 +34,23 @@ We use OWAPS to help us find the vulnerability of the website, and try to attack
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)So, it will be easy to inject script. for example, if I input “\</span>alert(1);\<script>\</script>\<span>” into search box and submit,I will get an alert box with  value 1;
 
-
+1.3 what part of the InfoSec Triad does this vulnerability attack
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	in this case, it is integrity, because, it can change the data that should be displayed to user.
+1.4 what kind of security attack can exploit this vulnerability 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	modification. because it modify the data;
+1.5 are attacks that exploit this vulnerability active or passive
+	active, because, it modify the output data;
+1.6 what business value would be lost cut to exploiting this vulnerability
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	data loss.
+1.7 what steps should the development team take to fix this vulnerability
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	(1) filter the input data. for example(Regular expression), delete the html tags.
+	(2) change some special symbol to ascii.for example, “<” , “>” should be transformed
 
