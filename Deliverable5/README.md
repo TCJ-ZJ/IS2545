@@ -77,14 +77,11 @@ We use OWAPS to help us find the vulnerability of the website, and try to attack
 2.2 Steps taken to exploit the vulnerability
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)whois server is a protocol used to  quering databases that store the registered users or assignees of an internet resource, such as a domain name,an IP assess block,etc.
-
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)so, it is must pass the input data to system shell, if it don’t do anything to check the data, it will be a chance to attack.
-
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)I input “anystr&cat /etc/passwd&” in input box, and submit, this command will  return some useful information like user ID, group ID, home directory, shell, etc.
-
-
+![image](https://github.com/TCJ-ZJ/IS2545/blob/master/Deliverable5/img/2.1.jpeg)
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)I got system information
 <br>
@@ -130,14 +127,11 @@ We use OWAPS to help us find the vulnerability of the website, and try to attack
 3.2 Steps taken to exploit the vulnerability
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)For a login operation, most situation, input will be as a part of sql.
-
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)so, if it not check the input data , it has chance to attack
-
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)I input “ dd' or 1=1 - ”
-
-
+![image](https://github.com/TCJ-ZJ/IS2545/blob/master/Deliverable5/img/2.2.jpeg)
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)login success
 <br>
