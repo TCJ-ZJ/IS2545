@@ -15,6 +15,9 @@
 We use OWAPS to help us find the vulnerability of the website, and try to attack the website on Firefox browser. We choose three attack methods: XSS,Command Injection,SQL Injection.
 
 **1.XSS Attack(Cross-Site Scripting)**
->1.1 URL of the website with the described vulnerability
+<br>
+1.1 URL of the website with the described vulnerability
 <br>
 http://demo.testfire.net/search.aspx
+>1.2 Steps taken to exploit the vulnerability
+
