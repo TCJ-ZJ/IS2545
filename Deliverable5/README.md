@@ -118,7 +118,7 @@ We use OWAPS to help us find the vulnerability of the website, and try to attack
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	(2)using some library to detect the input.
 
-**1.SQL Injection**
+**3.SQL Injection**
 <br>
 3.1 URL of the website with the described vulnerability
 <br>
@@ -131,6 +131,7 @@ We use OWAPS to help us find the vulnerability of the website, and try to attack
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)so, if it not check the input data , it has chance to attack
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)I input “ dd' or 1=1 - ”
+<br>
 ![image](https://github.com/TCJ-ZJ/IS2545/blob/master/Deliverable5/img/2.2.jpeg)
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)login success
