@@ -67,3 +67,113 @@ We use OWAPS to help us find the vulnerability of the website, and try to attack
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	(2) change some special symbol to ascii.for example, “<” , “>” should be transformed
 
+
+**2.Command Injection**
+<br>
+2.1 URL of the website with the described vulnerability
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.webscantest.com/osrun/whois.php
+<br>
+2.2 Steps taken to exploit the vulnerability
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)whois server is a protocol used to  quering databases that store the registered users or assignees of an internet resource, such as a domain name,an IP assess block,etc.
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)so, it is must pass the input data to system shell, if it don’t do anything to check the data, it will be a chance to attack.
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)I input “anystr&cat /etc/passwd&” in input box, and submit, this command will  return some useful information like user ID, group ID, home directory, shell, etc.
+
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)I got system information
+<br>
+
+2.3 what part of the InfoSec Triad does this vulnerability attack
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	in this case, it is confidentiality, because, unauthorized users may read system data;
+	<br>
+	
+2.4 what kind of security attack can exploit this vulnerability 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	interception. because it eavesdrop the system information;
+	<br>
+	
+2.5 are attacks that exploit this vulnerability active or passive
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	passive, because, it does not modify system;
+	<br>
+	
+2.6 what business value would be lost cut to exploiting this vulnerability
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	unauthorized access
+	<br>
+	
+2.7 what steps should the development team take to fix this vulnerability
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	(1) filter the input data. for example(Regular expression)
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	(2)using some library to detect the input.
+
+**1.SQL Injection**
+<br>
+3.1 URL of the website with the described vulnerability
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://demo.testfire.net/bank/login.aspx
+<br>
+3.2 Steps taken to exploit the vulnerability
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)For a login operation, most situation, input will be as a part of sql.
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)so, if it not check the input data , it has chance to attack
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)I input “ dd' or 1=1 - ”
+
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)login success
+<br>
+
+3.3 what part of the InfoSec Triad does this vulnerability attack
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	in this case, it is confidentiality, because, unauthorized users may read the data;
+	<br>
+	
+3.4 what kind of security attack can exploit this vulnerability 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	interception. because it login into the system, and read related data;
+	<br>
+	
+3.5 are attacks that exploit this vulnerability active or passive
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	passive, because, it does not modify system;
+	<br>
+	
+3.6 what business value would be lost cut to exploiting this vulnerability
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	unauthorized access
+	<br>
+	
+3.7 what steps should the development team take to fix this vulnerability
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	(1) filter the input data. for example(Regular expression)
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	(2) using some library to detect the input.
+	
+	
+	
+
